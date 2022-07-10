@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refrigeración Agüero</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/8724dc6190.js" crossorigin="anonymous">
+    </script>
+    <script>
+        function toggleMenu() {
+        document.getElementById("hamburger__menu").classList.toggle("show__menu");
+        }
+        function hideMenu() {
+        document.getElementById("hamburger__menu").classList.remove("show__menu");
+        }
+    </script>
+    </head>
+
+<body>
+    <main>
+        <section class="inicio" id="home">
+            <h1 class="inicio__link animate__animated animate__fadeInDown">Refrigeración Agüero</h1>
+            <p class="vinetas animate__animated animate__fadeInUp">Aires Acondicionados <span class="bullet">
+            <div class="button animate__animated animate__fadeInUpBig"><a href="#nosotros" class="button borde--blanco">Conocenos</a></div>
+        </section>
+    
+        <div class="navegacion__nav" id="menu_desktop">
+            <nav>
+                <div class="navegacion__izquierda">
+                    <a href="#home"><span class="navegacion__nav__menu navegacion__nav--primero">Home</span></a>
+                    <a href="#nosotros"><span class="navegacion__nav__menu navegacion__nav--izquierda">Nosotros</span></a>
+                    <a href="#servicios"><span class="navegacion__nav__menu navegacion__nav--izquierda">Servicios</span></a>
+                    <a href="#contacto"><span class="navegacion__nav__menu navegacion__nav--izquierda">Contacto</span></a>
+                </div>
+                
+            </nav>
+        </div>
+
+        <div class="navegacion__nav" id="menu_mobile">
+            <nav>
+                <a href="#home"><img src="./images/nico1.png" alt="" class="navegacion__nav__logo" id="logo__mobile" onclick="hideMenu()"></a>
+                <li class="hamburger"><i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+                
+                <div id="hamburger__menu" class="dropdown__content">
+                    <ul >
+                        <li class="dropdown__menu" onclick="hideMenu()"><a href="#home">Inicio</a></li>
+                        <li class="dropdown__menu" onclick="hideMenu()"><a href="#nosotros">Nosotros</a></li>
+                        <li class="dropdown__menu" onclick="hideMenu()"><a href="#servicios">Servicios</a></li>                  
+                        <li class="dropdown__menu" onclick="hideMenu()"><a href="#contacto">Contacto</a></li>  
+                    </div>                  
+                </ul>
+            </nav>
+        </div>
+
+        <section class="color__oscuro" id="nosotros" onclick="hideMenu()">
+            <div>
+                <div class="titulo">
+                    <h1>¿QUIÉNES SOMOS?</h1>
+                    <span class="titulo__borde"></span>
+                    <p>¿Te gustaría contar con nosotros?
+                        Somos técnicos especializados desde hace más de 10 años. Empezamos siendo técnicos electrónicos y mecánicos, para luego realizar todas las capacitaciones necesarias en refrigeración residencial y comercial y luego matricularnos para poder instalarte tu aire de forma segura y legal.  Usamos los mejores materiales y herramientas para que el trabajo tenga la calidad que necesita y priorizamos fundamentalmente la limpieza y el cuidado de la propiedad. TÉCNICOS MATRICULADOS</p>
+                </div>
+                <div class="contenedor">
+                    <article class="equipo">
+                        <ul>
+                            <li class="equipo__ambos"><img class="equipo__image" src="./images/nico2.jpg" alt="Nicolás" width="300px">
+                            </li>
+                                <p>
+                                    <span>
+                                    </span>
+                                </p>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="color__claro" id="servicios" onclick="hideMenu()">
+            <div>
+                <div class="titulo">
+                    <h1>NUESTROS SERVICIOS</h1>
+                    <span class="titulo__borde"></span>
+                    <p>Servicios</p>
+                </div> 
+                <div class="contenedor">
+                    <article class="contenedor__servicios">
+                            <div class="contenedor__servicios__izquierda one__half">
+                                <ul type="none">
+                                    <li class="service__item service__item--text-right">
+                                        <span class="fa-stack fa-right"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-cog fa-stack-1x fa-inverse service-icon"></i></span>
+                                        <h5>Reparaciones y mantenimiento</h5>
+                                        <p>Todo tipo de reparaciones en equipos tipo split</p>
+                                    </li>
+                                    <li class="service__item service__item--text-right">
+                                        <span class="fa-stack fa-right"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-cog fa-stack-1x fa-inverse service-icon"></i></span>
+                                        <h5>Instalaciónes de equipos tipo split nuevos</h5>
+                                        <p>Realizadas por técnicos matriculados como exíge el fabricante del equipo para su garantía</p>
+                                    </li>
+                                    <li class="service__item service__item--text-right">
+                                        <span class="fa-stack fa-right"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-cog fa-stack-1x fa-inverse service-icon"></i></span>
+                                        <h5>Reemplazo de cañerías por pérdidas</h5>
+                                        <p>Verificaciones de fugas y cambio de cañerías</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="contenedor__servicios__derecha one__half">
+                                <ul type="none">
+                                    <li class="service__item service__item--text-left">
+                                        <span class="fa-stack fa-left"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-cog fa-stack-1x fa-inverse service-icon"></i></span>
+                                        <h5>Aires frío calor</h5>
+                                        <p>Reparamos tu equipo si no está calentando como debería</p>
+                                    </li>
+                                    <li class="service__item service__item--text-left">
+                                        <span class="fa-stack fa-left"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-cog fa-stack-1x fa-inverse service-icon"></i></span>
+                                        <h5>Carga de gas</h5>
+                                        <p>Carga de gas refrigerante a equipos con R22, R410a</p>
+                                    </li>
+                                    <li class="service__item service__item--text-left">
+                                        <span class="fa-stack fa-left"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-cog fa-stack-1x fa-inverse service-icon"></i></span>
+                                        <h5>Reparaciones electrónicas</h5>
+                                        <p>Cambio de plaquetas y reparaciones específicas</p>
+                                    </li>
+                                </ul>
+                            </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="color__oscuro" id="contacto" onclick="hideMenu()">
+            <div>
+                <div class="titulo">
+                <h1>CONTACTO</h1>
+                <span class="titulo__borde"></span>
+                <p>Ingresá tus datos y nos contactaremos contigo a la brevedad posible.</p>
+                </div>
+                <div class="contenedor">
+                    <article>
+                        <div id="formulario">
+                            <form action="">
+                                <p><label for="">Tu Nombre (requerido)</label><br><span><input type="text" placeholder="" name="nombre"></span></p> 
+                                <p><label for="">Tu Email (requerido)</label><br><span><input type="email" placeholder="" name="email"></span></p>
+                                <p><label for="">Asunto</label><br><span><input type="text" placeholder="" name="asunto"></span></p>
+                                <p><label for="">Tu Mensaje (requerido)</label><br><span><textarea name="mensaje" id="" cols="30" rows="10" placeholder="Escribe tu mensaje..."></textarea></span></p>
+                                <div class="formulario__botones">
+                                    <p><input type="submit" class="formulario__boton" value="Enviar"><input type="reset" value="Limpiar"></p>
+                                </div> 
+                            </form>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="footer__contenedor" onclick="hideMenu()">
+        <a href="#home"><div class="menu__top"><div id="menu__top__inside"></div></div></a>
+        <ul class="social__icons">
+            <li><a href="https://facebook.com" target="_blank"><img class="img__facebook" src="./images/facebook.png" alt="Facebook"></a></li>
+            <li><a href="https://instagram.com" target="_blank"><img class="img__instagram" src="./images/instagram.png" alt="Instagram"></a></li>
+        </ul>
+    </div>    
+
+
+    <footer>
+        <p class="footer">Diseñado por Agüero, Nicolás / Copyright 2022 ©</p>
+    </footer>
+
+</body>
+
+</html>
